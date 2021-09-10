@@ -43,7 +43,7 @@
   }
   */
   nav {
-    background-color: rgba(0,139, 139,0.4);
+    background-color: rgba(175, 114, 35, 0.4);
     display: flex;
     flex-flow: row wrap;
     border-radius: 5px;
@@ -54,6 +54,9 @@
   
   nav a {
     color: rgba(0,139, 139, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 1.4em;
+    color: rgb(41, 37, 37);
   }
   
   
