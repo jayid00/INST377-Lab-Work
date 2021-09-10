@@ -31,17 +31,6 @@
     border-radius: 2px;
   }
   
-  /*ul {
-    list-style-type: none;
-    background-color: rgb(115, 115, 151);
-    margin: 0 25px;
-    padding: 0;
-  }
-
-  li {
-    display: inline;
-  }
-  */
   nav {
     background-color: rgba(175, 114, 35, 0.4);
     display: flex;
