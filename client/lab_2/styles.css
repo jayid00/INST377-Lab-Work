@@ -4,10 +4,21 @@
   
   h1 {
     background-color: cadetblue;
+    font-size: 42px;
+    font-family: fantasy;
+    font-weight: lighter;
+    border-radius: 10px;
+    padding: 20px 0 20px 40px;
   }
+
+  h1, h2 {
+    
+    margin: 40px 25px 20px 25px;
+  }
+
   p {
     padding:0;
-    margin:0;
+    margin:0 25px;
   }
   
   a {
