@@ -7,6 +7,7 @@
   .wrapper {
     display: flex;
     flex-direction: column;
+    width: auto;
     font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
       ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
     margin: 0;
@@ -47,7 +48,7 @@
   
   .logo {
     flex-wrap: wrap;
-    margin: auto;
+    width: auto;
   }
 
   .login {
@@ -62,7 +63,7 @@
   }
   
   .header {
-    width: 900px;
+    width: auto;
     height: 300px;
     display: flex;
     justify-content: space-between;
@@ -72,7 +73,6 @@
   .photo-grid-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
   }
   
   .photo-grid {
