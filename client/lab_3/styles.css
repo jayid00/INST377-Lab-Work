@@ -111,3 +111,10 @@ a {
     height: 200px;
     flex: 1;
   }
+
+  .footer-one,
+    .footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
