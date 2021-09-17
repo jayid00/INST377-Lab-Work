@@ -47,7 +47,6 @@
   
   .logo {
     flex-wrap: wrap;
-    flex-shrink: initial;
   }
 
   .login {
