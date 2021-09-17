@@ -71,6 +71,7 @@
   .photo-grid-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .photo-grid {
