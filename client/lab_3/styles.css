@@ -46,9 +46,10 @@
   }
   
   .logo {
-    flex: auto;
+    flex-wrap: wrap;
+    flex-shrink: initial;
   }
-  
+
   .login {
     margin-left: 20px;
   }
@@ -125,4 +126,8 @@ a {
   background-color: #5995DA;
   flex: initial;
   width: 300px;
+}
+
+  .login a, .signup a{
+  color: white;
 }
