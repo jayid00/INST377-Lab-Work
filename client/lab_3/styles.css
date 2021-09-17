@@ -48,7 +48,7 @@
   
   .logo {
     flex-wrap: wrap;
-    width: auto;
+    width: fit-content;
   }
 
   .login {
