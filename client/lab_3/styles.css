@@ -36,13 +36,17 @@
   }
 
   .links {
-   /* border: 1px solid #fff;   For debugging */
+   border: 1px solid #fff;   /*For debugging */
     display: flex;
     justify-content: flex-end;
   }
   
   .signup {
     margin-left: auto;
+  }
+  
+  .logo {
+    flex: auto;
   }
   
   .login {
