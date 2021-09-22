@@ -51,7 +51,7 @@ body {
 }
 
 .bird {
-    background-image: url('image/flappy.jpg');
+    background-image: url('image/flappy.png');
     position: absolute;
     height: 45px;
     width: 60px;
