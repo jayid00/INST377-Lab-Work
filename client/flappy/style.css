@@ -42,7 +42,7 @@ body {
 }
 
 .ground {
-    background-image: url('iamge/roundbg.png');
+    background-image: url('iamge/groundbg.png');
    width: 500px;
    height: 150px; 
    position: absolute;
