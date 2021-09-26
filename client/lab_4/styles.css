@@ -184,6 +184,6 @@ a {
 }
 
 .photo-grid-container .carousel_actions button#next {
-  background: grey;
+  background: rgb(228, 214, 214);
   margin-right: 10px;
 }
