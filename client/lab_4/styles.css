@@ -179,11 +179,11 @@ a {
 }
 
 .photo-grid-container .carousel_actions button#prev {
-  background: orange;
+  background: rgb(216, 210, 210);
   margin-left: 10px;
 }
 
 .photo-grid-container .carousel_actions button#next {
-  background: rgb(216, 210, 210);
+  background: orange;
   margin-right: 10px;
 }
