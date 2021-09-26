@@ -170,12 +170,12 @@ a {
 }
 
 .carousel_actions button {
-  border-radius: 25%;
+  border-radius: 20%;
   border: 0;
   font-weight: bold;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 30px;
 }
 
 .photo-grid-container .carousel_actions button#prev {
@@ -184,6 +184,6 @@ a {
 }
 
 .photo-grid-container .carousel_actions button#next {
-  background: rgb(228, 214, 214);
+  background: rgb(216, 210, 210);
   margin-right: 10px;
 }
