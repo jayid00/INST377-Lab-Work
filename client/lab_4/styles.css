@@ -163,7 +163,7 @@ a {
 .photo-grid-container .carousel_actions {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   position: absolute;
   top: 50%;
   transform: translateY(-50%); 
@@ -178,10 +178,12 @@ a {
   height: 40px;
 }
 
-#prev {
+.photo-grid-container .carousel_actions button#prev {
   background: orange;
+  margin-left: 10px;
 }
 
-#next {
+.photo-grid-container .carousel_actions button#next {
   background: grey;
+  margin-right: 10px;
 }
