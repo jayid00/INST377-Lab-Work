@@ -13,7 +13,7 @@
   <body>
       <!-- Header -->
     <div class=wrapper>
-        <h1 class="title">Jayid Alam Lab 3: Flexbox Madness</h1>
+        <h1 class="title">Jayid Alam Lab 4: Javascript 1</h1>
     
 
 
@@ -35,9 +35,9 @@
     </div>
 
 
-    <div class='photo-grid-container'>
+    <div class='photo-grid-container carousel'>
         <div class='photo-grid'>
-          <div class='photo-grid-item first-item'>
+          <div class='photo-grid-item first-item carousel_item--visible'>
             <img src='images/one.svg'/>
           </div>
           <div class='photo-grid-item'>
@@ -53,7 +53,14 @@
             <img src='images/five.svg'/>
           </div>
         </div>
+
+        <div class="carousel_actions">
+          <button id="prev" type="button" name="button">Prev</button>
+          <button id="next" type="button" name="button">Next</button>
+        </div>
       </div>
+
+      <script src="script.js"></script>
 
 
       <div class='footer'>
