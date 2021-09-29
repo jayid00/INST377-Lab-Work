@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             moveRight ()
         }
         else if (e.key === "ArrowUp") {
-            moveUp()
+            moveStraight()
         }
     }
 
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 30)
     }
 
-    function moveUp () {
+    function moveStraight () {
         isGoingLeft = false
         isGoingRight = false
         clearInterval(rightTimerID)
