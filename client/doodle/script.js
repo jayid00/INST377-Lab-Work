@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     rightTimerID,
     isJumping = true,
     isGoingLeft = false,
-    isGoingRight = false;
+    isGoingRight = false,
+    score = 0;
     
 
 
@@ -65,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   let firstPlatform = platforms[0].visual
                   firstPlatform.classList.remove('platform')
                   platforms.shift()
+                  score++
                   let newPlatform = new Platform(600)
                   platforms.push(newPlatform)
               }
@@ -112,6 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function gameOver () {
         console.log('Game Over')
         isGameOver = true
+        while (grid.firstChild) {
+            grid.removeChild(grid.firstChild)
+        }
+        grid.innerHTML = score
         clearInterval(upTimerID)
         clearInterval(downTimerID)
         clearInterval(leftTimerID)

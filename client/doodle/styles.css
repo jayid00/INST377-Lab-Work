@@ -1,20 +1,22 @@
 .grid {
     width: 400px;
     height: 600px;
-    background-color: yellow;
+    background-image: url('images/background.png');
     position: relative;
+    font-size: 200px;
+    text-align: center;
 }
 
 .doodler {
-    width: 60px;
+    background-image: url('images/doodler-guy.png');
+    width: 84px;
     height: 85px;
-    background-color: red;
     position: absolute;
 }
 
 .platform {
+    background-image: url('images/platform.png');
     width: 85px;
     height: 15px;
-    background-color: greenyellow;
     position: absolute;
 }
