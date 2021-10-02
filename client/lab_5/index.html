@@ -4,61 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jayid's Lab 5</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-      <div class="wrapper">
-        <div class="container">
-            <div class="notification is-primary">
-              <h1>Jayid's lab 5</h1>
+    <div class="wrapper">
+      <div class="container">
+        <div class="notification is-primary title is-1">
+          <h1>Jayid's lab 5</h1>
+        </div>
+
+        <!-- Forms for name-->
+        <div class="columns is-vcentered is-one-quarter">
+          <form action="" method="get" class="box">
+            <div class="field">
+              <label for="first-name" class="label">First Name</label>
+              <div class="control">
+                <input
+                  id="first-name"
+                  name="first-name"
+                  class="input"
+                  type="text"
+                />
+              </div>
             </div>
-        
-             
-            <!-- Forms for name-->
-            <div class="columns is-vcentered">
-              <form action='' method='get' class="box column is-one-quarter">
-                <div class="field">
-                    <label for='first-name' class="label">First Name</label>
-                    <div class="control">
-                      <input id='first-name' 
-                      name='first-name' 
-                      class="input" type="text">
-                    </div>
-                  </div>
-                  
+
             <!-- Forms for food pref-->
-                  <div class="field">
-                    <label for='food-pref' class="label">Food Preference</label>
-                    <div class="control">
-                      <input id='food-pref' 
-                      name='food-pref'
-                      class="input" type="text" placeholder="Enter a valid email">
-                    </div>
-                  </div>
+            <div class="field">
+              <label for="food-pref" class="label">Food Preference</label>
+              <div class="control">
+                <input
+                  id="food-pref"
+                  name="food-pref"
+                  class="input"
+                  type="text"
+                  placeholder="Enter a valid email"
+                />
+              </div>
+            </div>
 
             <!--Radio buttons-->
-                  <div class="control">
-                      <legend>Veggie or Vegan?</legend>
-                    <label for='yes' class="radio">
-                      <input id='yes' type="radio" name="answer">
-                      Yes
-                    </label>
-                    <label for='no' class="radio">
-                      <input id='no' type="radio" name="answer">
-                      No
-                    </label>
-                  </div>
-                </form>
+            <div class="control">
+              <legend>Veggie or Vegan?</legend>
+              <label for="yes" class="radio">
+                <input id="yes" type="radio" name="answer" />
+                Yes
+              </label>
+              <label for="no" class="radio">
+                <input id="no" type="radio" name="answer" />
+                No
+              </label>
+            </div>
+          </form>
 
-                <div class="column box">
-                    <p class="bd-notification is-primary">This is going to be something in two weeks.</p>
-                  </div>
-                </div>
+          <div class="box">
+            <p class="bd-notification is-primary">
+              This is going to be something in two weeks.
+            </p>
           </div>
         </div>
-        </div>
-      
+      </div>
+    </div>
   </body>
 </html>
