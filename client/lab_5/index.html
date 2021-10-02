@@ -19,27 +19,33 @@
             <!-- Forms for name-->
               <form action='' method='get' class="box">
                 <div class="field">
-                    <label class="label">First Name</label>
+                    <label for='first-name' class="label">First Name</label>
                     <div class="control">
-                      <input class="input" type="text">
+                      <input id='first-name' 
+                      name='first-name' 
+                      class="input" type="text">
                     </div>
                   </div>
                   
             <!-- Forms for food pref-->
                   <div class="field">
-                    <label class="label">Food Preference</label>
+                    <label for='food-pref' class="label">Food Preference</label>
                     <div class="control">
-                      <input class="input" type="text" placeholder="Enter a valid email">
+                      <input id='food-pref' 
+                      name='food-pref'
+                      class="input" type="text" placeholder="Enter a valid email">
                     </div>
                   </div>
 
+            <!--Radio buttons-->
                   <div class="control">
-                    <label class="radio">
-                      <input type="radio" name="answer">
+                      <legend>Veggie or Vegan?</legend>
+                    <label for='yes' class="radio">
+                      <input id='yes' type="radio" name="answer">
                       Yes
                     </label>
-                    <label class="radio">
-                      <input type="radio" name="answer">
+                    <label for='no' class="radio">
+                      <input id='no' type="radio" name="answer">
                       No
                     </label>
                   </div>
