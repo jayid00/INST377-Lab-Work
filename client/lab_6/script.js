@@ -24,7 +24,7 @@ function displayMatches() {
         <li>
             <span class="name">${place.name},</span>
             
-            `
+          </li>  `
     }).join('');
     suggestions.innerHTML = html;
 }
