@@ -30,6 +30,14 @@ async function windowFunctions() {
       })
       .join("");
 
+
+      // clear the result when no input provided
+      if (!e.target.value) {
+        document.querySelector(".suggestions").innerHTML = "";
+        return false;
+      }
+
+      //show the suggested result
     suggestions.innerHTML = html;
   }
 
