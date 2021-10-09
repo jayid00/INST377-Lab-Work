@@ -22,15 +22,18 @@ function displayMatches() {
     const html = matchArray.map(place => {
         return `
         <li>
-            <span class="name">${place.name},</span>
-            
+            <span>${place.name}</span><br>
+            <span>${place.category}</span><br>
+            <span>${place.address_line_1}</span><br>
+            <span>${place.city}</span>
+            <span>${place.zip}</span>
           </li>  `
     }).join('');
+
     suggestions.innerHTML = html;
 }
 
 const searchInput = document.querySelector('.input')
 const suggestions = document.querySelector('.suggestions')
 
-searchInput.addEventListener('change', displayMatches)
 searchInput.addEventListener('keyup', displayMatches)
