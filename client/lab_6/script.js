@@ -11,7 +11,7 @@ function findMatches(wordToMatch, restaurant) {
     return restaurant.filter(place => {
 
         const regex = new RegExp(wordToMatch, 'gi');
-        return place.zip.match(regex) || place.type.match(regex)
+        return place.zip.match(regex) || place.category.match(regex)
     });
 
 }
@@ -19,7 +19,14 @@ function findMatches(wordToMatch, restaurant) {
 
 function displayMatches() {
     const matchArray = findMatches(this.value, restaurant)
-    console.log(matchArray)
+    const html = matchArray.map(place => {
+        return `
+        <li>
+            <span class="name">${place.name},</span>
+            
+            `
+    }).join('');
+    suggestions.innerHTML = html;
 }
 
 const searchInput = document.querySelector('.input')
