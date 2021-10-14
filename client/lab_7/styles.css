@@ -1,0 +1,19 @@
+.title {
+    display: flex;
+    background-color: rgba(193, 226, 43, 0.8);
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.container {
+    max-width: 960px;
+    margin-top: 25px;
+  }
