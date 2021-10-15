@@ -29,10 +29,8 @@ async function windowFunctions() {
         .map((place) => {
           return `
           <li><div>${place.name}</div></li>
-              <div>${place.category}</div>
               <div>${place.address_line_1}</div>
-              <div>${place.city}</div>
-              <div>${place.zip}</div>
+              <div>${place.city} - ${place.zip}</div>
             <br>  `;
         })
         .join("");
