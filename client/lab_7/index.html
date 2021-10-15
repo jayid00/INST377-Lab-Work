@@ -5,21 +5,29 @@
     <title>Jayid's Lab 7</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+
+
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+   <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <div class="container">
-      <h1 class="title is-1 columns">Jayid's Lab 6</h1>
+      <h1 class="title is-1 columns">Jayid's Lab 7</h1>
 
-      <div
-        class="columns is-variable is-6 is-vcentered is-two-third"
-      >
-        <div class="column is-two-fifths">
+      <div class="columns is-variable is-6 is-vcentered is-two-third">
+        <div class="column is-three-fifths">
           <form action="/api" method="get" class="box">
             <div class="field">
               <label class="label">Enter the zipcode or the type of restaurant</label>
@@ -29,6 +37,10 @@
             </div>
             <ul class="suggestions" style="list-style-type:disc;"></ul>
           </form>
+          <div class="column">
+            <div id="mapid"></div>
+          </div>
+          
         </div>
       </div>
     </div>

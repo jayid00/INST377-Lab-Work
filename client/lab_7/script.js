@@ -5,10 +5,6 @@ async function windowFunctions() {
   
     const restaurant = await request.json();
   
-  //   fetch(endpoint)
-  //     .then((blob) => blob.json())
-  //     .then((data) => restaurant.push(...data));
-  
     function findMatches(wordToMatch, restaurant) {
       return restaurant.filter((place) => {
         const regex = new RegExp(wordToMatch, "gi");
