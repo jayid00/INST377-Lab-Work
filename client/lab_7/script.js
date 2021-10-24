@@ -4,6 +4,8 @@ async function windowFunctions() {
     const request = await fetch(endpoint)
     const restaurant = await request.json();
     const mymap = L.map('mapid').setView([51.505, -0.09], 12);
+    const searchInput = document.querySelector(".input");
+    const suggestions = document.querySelector(".suggestions");
     const token = 'pk.eyJ1IjoiamF5aWQwNyIsImEiOiJja3VycWtzbDg1OHoyMzJuenl3YTBrZ3piIn0._AtDIQVdV3BnDGihF3xusw'
   
 
@@ -16,6 +18,7 @@ async function windowFunctions() {
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
 
+
     function findMatches(wordToMatch, restaurant) {
       return restaurant.filter((place) => {
         const regex = new RegExp(wordToMatch, "gi");
@@ -24,9 +27,9 @@ async function windowFunctions() {
     }
   
     function displayMatches(e) {
-      const matchArray = findMatches(e.target.value, restaurant);
-      const html = matchArray
-        .map((place) => {
+      let matchArray = findMatches(e.target.value, restaurant);
+      matchArray = matchArray.slice(0, 5);
+      const html = matchArray.map((place) => {
           return `
           <li><div>${place.name}</div></li>
               <div>${place.address_line_1}</div>
@@ -46,8 +49,7 @@ async function windowFunctions() {
       suggestions.innerHTML = html;
     }
   
-    const searchInput = document.querySelector(".input");
-    const suggestions = document.querySelector(".suggestions");
+   
   
     searchInput.addEventListener("keyup", (evt) => { displayMatches(evt) });
   }
