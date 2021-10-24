@@ -19,7 +19,7 @@ async function windowFunctions() {
     function findMatches(wordToMatch, restaurant) {
       return restaurant.filter((place) => {
         const regex = new RegExp(wordToMatch, "gi");
-        return place.zip.match(regex) || place.category.match(regex);
+        return place.zip.match(regex);
       });
     }
   
