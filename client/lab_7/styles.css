@@ -20,3 +20,8 @@
     max-width: 960px;
     margin-top: 25px;
   }
+
+  li{
+    background-color:rgb(248, 138, 11);
+    border-radius: 10px;
+}
